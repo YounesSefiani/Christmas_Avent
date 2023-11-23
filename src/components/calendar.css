@@ -1,0 +1,18 @@
+.calendar {
+  min-height: 80vh;
+  width: 90vw !important;
+  box-shadow: 0 6px 9px 0 rgba(2, 2, 2, 0.2);
+}
+.content {
+  background-color: #efefef;
+  opacity: 0.7;
+  gap: 7rem;
+}
+.contentTitle {
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+}
+.btnAfterNext {
+  width: 80%;
+  justify-content: space-between !important;
+}
