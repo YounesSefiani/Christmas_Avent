@@ -10,18 +10,16 @@
 }
 
 .ReactModal__Content {
-  top: 50%;
-  left: 50%;
   transform: translate(80%, 10%);
   border: 1px solid #ccc;
   background: #fff;
   border-radius: 4px;
   outline: none;
   padding: 20px;
-  width: 50%;
+  width: 70vw;
   max-width: 600px;
-  height: 70%;
-  max-height: 700px;
+  /* height: 70%;
+  max-height: 700px; */
   box-sizing: border-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -36,7 +34,9 @@ p,
 h2 {
   margin: 6px;
 }
-
+h2 {
+  font-size: 3rem;
+}
 .background {
   overflow: hidden;
   border-radius: 8px;
@@ -51,9 +51,10 @@ h2 {
 
 .poster {
   left: 50%;
-  transform: translateX(-50%) translateY(-40%);
+  transform: translateX(-50%) translateY(-20%);
   z-index: 2;
   position: relative;
+  height: 105vh;
 }
 
 .poster img {
@@ -61,4 +62,12 @@ h2 {
   height: auto;
   border-radius: 8px;
   margin-bottom: 5px;
+}
+.btnModal {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.modal {
+  background-color: #333 !important;
 }

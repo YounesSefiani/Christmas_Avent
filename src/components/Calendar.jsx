@@ -6,7 +6,6 @@ import CalendarCase from "./CalendarCase";
 import Modal from "react-modal";
 import MovieData from "./MovieData";
 
-
 function Calendar() {
   const [count, setCount] = useState(1);
   const [modalOpen, setModalOpen] = useState(false);
@@ -28,7 +27,7 @@ function Calendar() {
 
   const handleNextDay = () => {
     setCount((prevCount) => Math.min(24, prevCount + 1));
-  }
+  };
 
   return (
     <div className="d-flex justify-content-center align-items-center minHeight ">
@@ -50,7 +49,10 @@ function Calendar() {
               Day <br /> {count}
             </h1>
             <div>
-              <button className="btn" onClick={() => openModal(MovieData[count - 1])}>
+              <button
+                className="btn"
+                onClick={() => openModal(MovieData[count - 1])}
+              >
                 Découvre ton cadeau
               </button>
             </div>
@@ -67,12 +69,15 @@ function Calendar() {
         </section>
       </MovingText>
 
-      <Modal 
-      isOpen={modalOpen}
-      onRequestClose={closeModal}
+      <Modal
+        style={{ background: "red" }}
+        isOpen={modalOpen}
+        onRequestClose={closeModal}
       >
         {selectedFilm && <CalendarCase {...selectedFilm} />}
-        <button onClick={closeModal}>Fermer</button>
+        <button className="btnModal" onClick={closeModal}>
+          X
+        </button>
       </Modal>
     </div>
   );
