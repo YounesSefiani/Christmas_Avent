@@ -30,7 +30,7 @@ function Calendar() {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center minHeight ">
+    <div className="d-flex flex-column justify-content-center align-items-center minHeight ">
       <MovingText
         type="flipFromLeftToCenter"
         duration="3000ms"
@@ -41,6 +41,22 @@ function Calendar() {
         fillMode="none"
       >
         <section className="calendar d-flex flex-column container">
+          <MovingText
+            type="bounce"
+            duration="2000ms"
+            delay="0s"
+            direction="normal"
+            timing="ease"
+            iteration="infinite"
+            fillMode="none"
+          >
+            <img
+              className="imgAnim mb-10"
+              src="https://plus.unsplash.com/premium_photo-1661292089523-a74324a5e57e?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </MovingText>
+
           <h1 className="textAlignCenter bgWhite p-10">
             Advent Christmas Films
           </h1>
