@@ -1,7 +1,7 @@
 import React from 'react';
 import MovieData from './MovieData';
 
-const Movies = ({ title, poster, background, trailer, synopsis, director, casting, genre, release_date, streaming, duration, origin }) => {
+const Movies = () => {
   return (
     <div className="movies-details">
       <h2>{title}</h2>

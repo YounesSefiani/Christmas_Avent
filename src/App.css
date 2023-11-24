@@ -1,0 +1,64 @@
+.case-calendrier {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.ReactModal__Content {
+  top: 50%;
+  left: 50%;
+  transform: translate(80%, 10%);
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  width: 50%;
+  max-width: 600px;
+  height: 70%;
+  max-height: 700px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin: 10px 0 5px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+p,
+h2 {
+  margin: 6px;
+}
+
+.background {
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.background img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.poster {
+  left: 50%;
+  transform: translateX(-50%) translateY(-40%);
+  z-index: 2;
+  position: relative;
+}
+
+.poster img {
+  width: 40%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
