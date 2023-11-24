@@ -4,7 +4,7 @@
   box-shadow: 0 6px 9px 0 rgba(2, 2, 2, 0.2);
 }
 .content {
-  background-color: #efefef;
+  background-color: rgba(239, 239, 239, 0);
   opacity: 0.7;
   gap: 7rem;
 }
