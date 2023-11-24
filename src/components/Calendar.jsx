@@ -43,10 +43,10 @@ function Calendar() {
         <section className="calendar d-flex flex-column container">
           <MovingText
             type="bounce"
-            duration="2000ms"
+            duration="5000ms"
             delay="0s"
             direction="normal"
-            timing="ease"
+            timing="ease-in-out"
             iteration="infinite"
             fillMode="none"
           >
